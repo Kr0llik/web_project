@@ -1,0 +1,116 @@
+h1 {
+    text-align: center;
+    margin-right: 100px;
+
+}
+
+a {
+    color: grey;
+    size-font: 20px;
+}
+
+.container- {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(84,204,96,1) 0%, rgba(0,212,255,1) 100%);
+    min-width: 325px;
+    max-width: 325px;
+    min-height: 350px;
+    max-height: 350px;
+    padding: 30px;
+    margin-left: 400px;
+}
+
+.row {
+    margin-right: 200px;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+header, nav {
+    background: linear-gradient(90deg, rgba(163,144,144,1) 0%, rgba(198,197,197,1) 50%, rgba(164,146,146,1) 100%);
+}
+
+body {
+	background: linear-gradient(90deg, rgba(255,190,82,1) 12%,
+	rgba(166,103,3,1) 30%, rgba(162,100,0,1) 50%, rgba(245,152,0,1) 74%);
+}
+
+.btn-b {
+    background: rgba(166,103,3,1) 30%, rgba(162,100,0,1) 50%, rgba(245,152,0,1) 74%)
+}
+
+.lac {
+	background: linear-gradient(90deg, rgba(156,156,158,1) 0%,
+	rgba(214,212,226,1) 50%, rgba(164,162,170,1) 100%);
+}
+
+.container-p {
+    min-width: 325px;
+    max-width: 325px;
+    min-height: 350px;
+    max-height: 350px;
+    padding: 30px;
+    border: 5px solid;
+    margin-left: -10px;
+    margin-top: -400px;
+}
+
+.container-l {
+    min-width: 1380px;
+    max-width: 1380px;
+    min-height: 780px;
+    max-height: 780px;
+    border: 5px solid linear-gradient(90deg, rgba(156,156,158,1) 0%,
+	rgba(214,212,226,1) 50%, rgba(164,162,170,1) 100%);
+    padding: 30px;
+    margin-left: 50px;
+}
+
+.row-pa {
+    margin-right: 20px;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-a {
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+  padding: .5em 2em;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+.container-log {
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 80px;
+  width: 80px;
+  background-color: black;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+.carousel-inner {
+  nav:true,
+  loop:true,
+  autoplay:true
+}
+div.carousel {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1024px;
+    max-width: 1024px;
+    min-height: 800px;
+    max-height: 800px;
+}

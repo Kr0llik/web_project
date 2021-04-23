@@ -1,0 +1,68 @@
+{% extends "data.html" %}
+
+{% block content %}
+<meta charset="UTF-8">
+
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1">
+            <img src="static/img/cr0.jpg" class="d-block w-100" width="1080" height="768" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Привет, Мандаринки!</h2>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="1">
+            <img src="static/img/cr1.jpg" class="d-block w-100" width="1080" height="768" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h4>Наш сайт создан для любителей почитать и не только! Здесь мы поможем найти вам подходящий
+                    жанр и книги для вашего насторения!</h4>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1">
+            <img src="static/img/cr3.jpg" class="d-block w-100" width="1080" height="768" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h4>Вы так же можете составлять списки из понравшихся книг или из тех, которые вы хотели бы
+                    прочитать! А наш бот по имени Апельсин будет ежедневно поднимать вам настроение!</h4>
+            </div>
+        </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<div class="row gx-3">
+    <div class="col-4">
+        <div class="container-">
+            <h2>Опросы.</h2>
+            <p>Здесь ты можешь пойти различные интересные опросы!</p>
+            <p><a class="btn btn-lg btn-primary" href="/questionnaire_menu">Клик.</a></p>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="container-">
+            <h2>Подборочки..</h2>
+            <p>Тут ты можешь создать разные подбоки книг по настроению.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Клик.</a></p>
+            <div>{{ message }}</div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="container-">
+            <h2>Минутка позновательности..</h2>
+            <p>Здесь ты можешь узнать много интересных и необочных фактов о книгах..</p>
+            <p><a class="btn btn-lg btn-primary" href="/facts">Клик.</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "data.html" %}
+
+{% block content %}
+<meta charset="UTF-8">
+
+<h1>{{ genre.capitalize() }}</h1>
+
+{% for x in values %}
+    <h3>{{ x[1] }}</h3>
+    <p>{{ x[0] }}</p>
+    <img src="/static/img/{{ genre.lower() }}{{ loop.index - 1 }}.jpg">
+{% endfor %}
+
+{% endblock %}

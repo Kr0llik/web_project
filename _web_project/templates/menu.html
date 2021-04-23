@@ -1,0 +1,56 @@
+{% extends "data.html" %}
+
+{% block content %}
+<meta charset="UTF-8">
+<h1>Опросы</h1>
+<div class="row row-pa">
+    <ul class="container c-ss">
+        <form method="post">
+            <li align="left">
+                {% if flag == '1' %}
+                <button class="btn btn-b" type="submit" name="type" value=0>Опрос 1</button>
+                <p>Опрос 1</p>
+                <p>6 вопросов</p>
+                <a class="btn btn-c" href="/questionnarie1">Пройти</a>
+                {% else %}
+                <button class="btn btn-b" type="submit" name="type" value=1>Опрос 1</button>
+                {% endif %}
+            </li>
+
+            <li align="left">
+                {% if flag == '2' %}
+                <button class="btn btn-b" type="submit" name="type" value=0>Опрос 2</button>
+                <p>Опрос 2</p>
+                <p>10 вопросов</p>
+                <a class="btn btn-c" href="/questionnarie2">Пройти</a>
+                {% else %}
+                <button class="btn btn-b" type="submit" name="type" value=2>Опрос 2</button>
+                {% endif %}
+            </li>
+
+            <li align="left">
+                {% if flag == '3' %}
+                <button class="btn btn-b" type="submit" name="type" value=0>Опрос 3</button>
+                <p>Опрос 3</p>
+                <a class="btn btn-c" href="/questionnarie3">Пройти</a>
+                {% else %}
+                <button class="btn btn-b" type="submit" name="type" value=3>Опрос 3</button>
+                {% endif %}
+            </li>
+        </form>
+    </ul>
+
+    <ul class="container c-s">
+        <h3>Последние 3 результата</h3>
+        {% if first %}
+        <a class="btn btn-b" href="/subjects/{{ first.lower() }}">{{ first }}</a>
+        {% endif %}
+        {% if second %}
+        <a class="btn btn-b" href="/subjects/{{ second.lower() }}">{{ second }}</a>
+        {% endif %}
+        {% if third %}
+        <a class="btn btn-b" href="/subjects/{{ third.lower() }}">{{ third }}</a>
+        {% endif %}
+    </ul>
+</div>
+{% endblock %}

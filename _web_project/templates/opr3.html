@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Опрос</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style2.css') }}"/>
+
+</head>
+<body>
+<h1>Узнай как хорошо ты знаешь правила русского языка!</h1>
+<form class="opr_form">
+    <h3>В какой строке правописание всех корней проверяется ударением?</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="question11">
+        <label class="form-check-label" for="question11">
+            в...ждение, прив...дение, раскр…ить, раст…ржение
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="question12" checked>
+        <label class="form-check-label" for="question12">
+            кл….няться, св...рить, прогл...тить, упр...стить
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="question13">
+        <label class="form-check-label" for="question13">
+            б…чёвка, г...родской, м...ровой, возл...жить
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="question14">
+        <label class="form-check-label" for="question14">
+            ув...личить, ед...ница, пл…вец, под...рить
+        </label>
+    </div>
+
+    <h3>Укажите строку, в которой во всех словах после Ц пишется Ы:</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="question21">
+        <label class="form-check-label" for="question21">
+            иниц…атива, ц...клон, куц...й, медиц...на
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="question22" checked>
+        <label class="form-check-label" for="question22">
+            ц...ган, ц...низм, инц...дент, ц…вилизация
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="question23">
+        <label class="form-check-label" for="question23">
+            ц...тата, ц...пленок, Цариц...но, Куниц...н
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="question24">
+        <label class="form-check-label" for="question24">
+            краснолиц…й, сестриц…н, ц...почки, ц…кнуть
+        </label>
+    </div>
+
+    <h3>Во всех словах какой строки нужно писать Ь?</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="question31">
+        <label class="form-check-label" for="question31">
+            закон...чить, мен...ше, камен...щик, одуван…чик
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="question32" checked>
+        <label class="form-check-label" for="question32">
+            болел...щик, сел...дь, тон...ше, утеш…ся
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="question33">
+        <label class="form-check-label" for="question33">
+            барабан..щик, мелоч…, мощ...ный, печ...ник
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="question34">
+        <label class="form-check-label" for="question34">
+            гон...щик, внуч... ка, свеж…, хищ…ник
+        </label>
+    </div>
+
+    <h3>Укажите синонимы к слову сверкать</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="question41">
+        <label class="form-check-label" for="question41">
+            ослепить, восхитить.
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="question42" checked>
+        <label class="form-check-label" for="question42">
+            блестеть, сиять.
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="question43">
+        <label class="form-check-label" for="question43">
+            удивить, затмить.
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="question44">
+        <label class="form-check-label" for="question44">
+            оглушить, заворожить.
+        </label>
+    </div>
+
+    <h3>В каком слове верно выделена буква, обозначающая ударный гласный звук?</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question5" id="question51">
+        <label class="form-check-label" for="question51">
+            Агент
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question5" id="question52" checked>
+        <label class="form-check-label" for="question52">
+            цЕмент
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question5" id="question53">
+        <label class="form-check-label" for="question53">
+            обеспечЕние
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question5" id="question54">
+        <label class="form-check-label" for="question54">
+            звонИт
+        </label>
+    </div>
+
+    <h3>В каком предложении вместо слова ВЕЛИКИЙ нужно употребить ВЕЛИЧЕСТВЕННЫЙ?</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question6" id="question61">
+        <label class="form-check-label" for="question61">
+            В его глазах выражалась ВЕЛИКАЯ радость и любовь к жизни.
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question6" id="question62" checked>
+        <label class="form-check-label" for="question62">
+            Она, красивая, благородная, с ВЕЛИКОЙ осанкой, не спеша вошла в кабинет.
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question6" id="question63">
+        <label class="form-check-label" for="question63">
+            Это был ВЕЛИКИЙ писатель современности, сумевший выразить дух своего времени.
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question6" id="question64">
+        <label class="form-check-label" for="question64">
+            Каждый, наверное, испытывал не себе ВЕЛИКУЮ власть искусства.
+        </label>
+    </div>
+
+    <h3>Укажите пример с ошибкой в образовании формы слова.</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question7" id="question71">
+        <label class="form-check-label" for="question71">
+            более холодный приём
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question7" id="question72" checked>
+        <label class="form-check-label" for="question72">
+            пара валенок
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question7" id="question73">
+        <label class="form-check-label" for="question73">
+            в двухтысячном пятом году
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question7" id="question74">
+        <label class="form-check-label" for="question74">
+            сыплет снег
+        </label>
+    </div>
+
+    <h3>В каком ряду во всех словах пропущена одна и та же буква?</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question8" id="question81">
+        <label class="form-check-label" for="question81">
+            бе..шумный, бе..звучный
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question8" id="question82" checked>
+        <label class="form-check-label" for="question82">
+            пр..секать, пр..бывать на станцию
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question8" id="question83">
+        <label class="form-check-label" for="question83">
+            обез..яна, в..юга
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question8" id="question84">
+        <label class="form-check-label" for="question84">
+            небез..звестный, по..грать
+        </label>
+    </div>
+
+    <h3>В каком ряду во всех словах пропущена буква Е?</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question9" id="question91">
+        <label class="form-check-label" for="question91">
+            о полын…, в аудитори…
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question9" id="question92" checked>
+        <label class="form-check-label" for="question92">
+            при жизн…, о подруг…
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question9" id="question93">
+        <label class="form-check-label" for="question93">
+            по алле…, в парк…
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question9" id="question94">
+        <label class="form-check-label" for="question94">
+            у дорожк…, в книг…
+        </label>
+    </div>
+
+    <h3>В каком предложении выделенное слово пишется раздельно?</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question10" id="question101">
+        <label class="form-check-label" for="question101">
+            Барыня давала Ванюше свою корзину и платила ему (ЗА) ТО, что он часа таскал за ней по базару эту корзину.
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question10" id="question102" checked>
+        <label class="form-check-label" for="question102">
+            Старики просили, ЧТО (БЫ) Мироныча не трогали.
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question10" id="question103">
+        <label class="form-check-label" for="question103">
+            (НЕ) СМОТРЯ на плохую погоду, откладывать путешествие не хотелось.
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question10" id="question104">
+        <label class="form-check-label" for="question104">
+            Он радовался встрече, девушка ТО (ЖЕ) не осталась к этому равнодушной.
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Проверить</button>
+</form>
+</body>
+</html>

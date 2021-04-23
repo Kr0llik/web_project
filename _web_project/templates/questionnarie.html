@@ -1,0 +1,165 @@
+{% extends "opr1.html" %}
+
+{% block content %}
+<meta charset="UTF-8">
+<h1>Узнай какой жанр тебе походит больше!</h1>
+<form class="opr_form" method="post">
+    <a class="btn btn-a" href="/questionnaire_menu">Назад</a>
+    <h2>Вам нравится, когда убийца...</h2>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="question11" value=1>
+        <label class="form-check-label" for="question11">
+            Дворецкий
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="question12" value=2 checked>
+        <label class="form-check-label" for="question12">
+            Пришелец, который захватывает миры
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="question13" value=3>
+        <label class="form-check-label" for="question13">
+            На самом деле и есть жертва, и все действия происходит в голове автора
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="question14" value=4>
+        <label class="form-check-label" for="question14">
+            Никто не убил, а главные герои наконец-то вместе и счастливы
+        </label>
+    </div>
+
+    <h2>Что вам больше всего нравится в процессе чтения?</h2>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="question21" value=1>
+        <label class="form-check-label" for="question21">
+            Мне нравится разбираться в запутанных сюжетных линиях
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="question22" value=2 checked>
+        <label class="form-check-label" for="question22">
+            Удивляться фантазии автора и полностью погружаться в новые миры
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="question23" value=3>
+        <label class="form-check-label" for="question23">
+            Нравится, когда книга заставляет копаться в себе и иногда даже пугает
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="question24" value=4>
+        <label class="form-check-label" for="question24">
+            Нравится переживать эмоции персонажей. Радоваться и скорбить вместе с ними
+        </label>
+    </div>
+
+    <h2>Главный герой вашей мечты – это...</h2>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="question31" value=1>
+        <label class="form-check-label" for="question31">
+            Опытный следователь, расследующий самые загадочные преступления
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="question32" checked value=2>
+        <label class="form-check-label" for="question32">
+            Капитан звездолета, который каждый день отправляется в невероятные приключения в открытый космос
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="question33" value=3>
+        <label class="form-check-label" for="question33">
+            Сын маньяка, который добрый в душе и не хочет убивать, но на него давит отец
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="question34" value=4>
+        <label class="form-check-label" for="question34">
+            Простой парень, который влюбился по уши, но весь мир против него
+        </label>
+    </div>
+
+    <h2>Выбери автора, который вам больше по душе.</h2>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="question41" value=1>
+        <label class="form-check-label" for="question41">
+            Агата Кристи
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="question42" checked value=2>
+        <label class="form-check-label" for="question42">
+            Терри Пратчетт
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="question43" value=3>
+        <label class="form-check-label" for="question43">
+            Стивен Кинг
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="question44" value=4>
+        <label class="form-check-label" for="question44">
+            Джейн Остин
+        </label>
+    </div>
+
+    <h2>С какой фразой вы хотите закрывать книгу?</h2>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question5" id="question51" value=1>
+        <label class="form-check-label" for="question51">
+            Так вот оно что!
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question5" id="question52" checked value=2>
+        <label class="form-check-label" for="question52">
+            Как такое выдумать вообще можно?
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question5" id="question53" value=3>
+        <label class="form-check-label" for="question53">
+            Да... Интересно, но хорошо, что у меня не так
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question5" id="question54" value=4>
+        <label class="form-check-label" for="question54">
+            Эх, вот бы мне так...
+        </label>
+    </div>
+
+    <h2>Книга для вас – это в первую очередь...</h2>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question6" id="question61" value=1>
+        <label class="form-check-label" for="question61">
+            Способ познания мира
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question6" id="question62" checked value=2>
+        <label class="form-check-label" for="question62">
+            Способ окунуться в другой мир
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question6" id="question63" value=3>
+        <label class="form-check-label" for="question63">
+            Способ развлечения
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="question6" id="question64" value=4>
+        <label class="form-check-label" for="question64">
+            Способ убить время
+        </label>
+    </div>
+    <button type="submit" class="floating-button">Узнать результат</button>
+</form>
+{% endblock %}

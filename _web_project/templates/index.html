@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<a class="btn btn-secondary" href="/addjob">Add job</a>
+<a class="btn btn-secondary" href="/departments">Go to departments</a>
+<p>{{ message }}</p>
+{% for item in jobs %}
+{% set index = loop.index %}
+<h2>Action #{{ index }}</h2>
+<div class="col-md6 border rounded border-0">
+    <ul class="list-group list-group-horizontal">
+        <span class="border border-0">
+            <ul class="border border-0 bg-s">Title of activity</ul>
+            <ul class="border-end bg-ae">{{ item.job }}</ul>
+        </span>
+
+        <span class="border border-0">
+            <ul class="border border-0 bg-s">Team leader</ul>
+            <ul class="border-end bg-ae">{{ item.team_leader_name }}</ul>
+        </span>
+
+        <span class="border border-0">
+            <ul class="border border-0 bg-s">Duration</ul>
+            <ul class="border-end bg-ae">{{ item.work_size }}</ul>
+        </span>
+
+        <span class="border border-0">
+            <ul class="border border-0 bg-s">List of collaborators</ul>
+            <ul class="border-end bg-ae">{{ item.collaborators }}</ul>
+        </span>
+
+
+        <span class="border border-0">
+            <ul class="border border-0 bg-s">Hazard_category</ul>
+            <ul class="border-end bg-ae">{{ item.hazard_category }}</ul>
+        </span>
+
+        <span class="border border-0">
+            <ul class="border border-0 bg-s">Is finished</ul>
+            {% if item.is_finished %}
+                <ul class="border-end bg-g">{{ item.is_finished }}</ul>
+            {% else %}
+                <ul class="border-end bg-p">{{ item.is_finished }}</ul>
+            {% endif %}
+        </span>
+
+    </ul>
+    {% if index in list_btn or list_btn == [True] %}
+    <a class="btn btn-warning" href="/edit_job/{{ index }}">Edit Job</a>
+    <a class="btn btn-danger" href="/del_job/{{ index }}">Delete Job</a>
+    {% endif %}
+</div>
+{% endfor %}
+{% endblock %}

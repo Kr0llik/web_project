@@ -1,0 +1,29 @@
+{% extends "data.html" %}
+
+{% block content %}
+
+<h1 align="center">Личный кабинет</h1>
+
+
+<div class="row row-pa">
+
+
+    <div class="container-p">
+        <img src="static/img/img_396358.png" class="d-block w-100" alt="Error">
+    </div>
+
+    <div class="container-l">
+        <form method="post">
+            <p align="left">Имя пользователя: {{ name }}</p>
+
+            <p align="left">Пароль: {{ '*' * 5 }}</p>
+
+
+            <p align="left">Дата регистрации: {{ date }}</p>
+            <p align="left">Email: {{ email }}</p>
+        </form>
+    </div>
+
+
+</div>
+{% endblock %}
